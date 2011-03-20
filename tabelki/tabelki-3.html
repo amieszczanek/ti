@@ -8,45 +8,55 @@
 src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <style>
-  article, aside, dialog, figure, footer, header,
-  hgroup, menu, nav, section { display: block; }
+	table {
+		caption-side: top; 
+		width: 250px;
+		border: 2px inset black;
+		
+	}
+	td {
+	border-right: 1px inset black;
+	text-align: center;
+	}
+	.col1 {
+		border-right: 1px inset black;
+		text-align: right;
+		width: 100px;
+		padding-right: 20px;
+	}
+	.col2 {
+		text-align: right;
+		width: 150px;
+		padding-right: 10px;
+	}
 </style>
 </head>
 <body>
-<table border="1" cellspacing="5">
-	<col width="100">
-	<col width="150">
+<table rules="groups">
 	<caption>Population</caption>
     <thead>    	
         <tr>
-            <td align="center" valign="middle">Year</td>
-			<td align="center" valign="middle">World Population</td>
+            <td>Year</td><td>World Population</td>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td align="center" valign="middle">8000 B.C.</td>
-    		<td align="right" valign="middle">5,000,000</td>        
+            <td class="col1">8000 B.C.</td><td class="col2">5,000,000</td>        
         </tr>
         <tr>
-        	<td align="center" valign="middle">50 A.D.</td>
-    		<td align="right" valign="middle">200,000,000</td>    	
+        	<td class="col1">50 A.D.</td><td class="col2">200,000,000</td>    	
         </tr>
         <tr>
-        	<td align="center" valign="middle">1650 A.D.</td>
-    		<td align="right" valign="middle">500,000,000</td>    	
+        	<td class="col1">1650 A.D.</td><td class="col2">500,000,000</td>    	
         </tr>
         <tr>
-        	<td align="center" valign="middle">1850 A.D.</td>
-    		<td align="right" valign="middle">1,000,000,000</td>    	
+        	<td class="col1">1850 A.D.</td><td class="col2">1,000,000,000</td>    	
         </tr>
         <tr>
-        	<td align="center" valign="middle">1945 A.D.</td>
-    		<td align="right" valign="middle">2,300,000,000</td>    	
+        	<td class="col1">1945 A.D.</td><td class="col2">2,300,000,000</td>    	
         </tr>
         <tr>
-        	<td align="center" valign="middle">1980 A.D.</td>
-    		<td align="right" valign="middle">4,400,000,000</td>    	
+        	<td class="col1">1980 A.D.</td><td class="col2">4,400,000,000</td>    	
         </tr>	
     </tbody>
 </table>
