@@ -17,16 +17,29 @@ src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	td {
 	border-right: 1px inset black;
 	text-align: center;
-	}
-	.col1 {
-		border-right: 1px inset black;
-		text-align: right;
-		padding-right: 20px;
-	}
-	.col2 {
-		text-align: right;
-		padding-right: 10px;
-	}
+	border-style: solid;
+	border-top-color: #000000;
+	border-right-color: black;
+}
+.col1 {
+	border-right: 1px inset black;
+	text-align: right;
+	padding-right: 20px;
+	border-top-style: inherit;
+	border-right-style: inset;
+	border-right-width: 1px;
+	border-bottom-style: inherit;
+	border-left-style: inherit;
+}
+.col2 {
+	text-align: right;
+	padding-right: 10px;
+	border-top-style: inherit;
+	border-right-style: inherit;
+	border-bottom-style: inherit;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
 </style>
 </head>
 <body>
